@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Logical Coders</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f0f4ff; color: #1e293b; }
+nav { background: #0f2557; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); flex-wrap: wrap; }
+.nav-brand { color: white; font-size: 1.15rem; font-weight: 700; padding: 1rem 0; text-decoration: none; }
+.nav-brand span { color: #60a5fa; }
+.nav-links { display: flex; gap: 0; }
+.nav-link { color: #cbd5e1; padding: 1.2rem 0.9rem; font-size: 0.85rem; font-weight: 500; border-bottom: 3px solid transparent; transition: all 0.2s; white-space: nowrap; text-decoration: none; }
+.nav-link:hover, .nav-link.active { color: white; border-bottom-color: #60a5fa; background: rgba(255,255,255,0.05); }
+
+main { max-width: 600px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+.page-title { font-size: 2.1rem; font-weight: 800; color: #0f2557; margin-bottom: 0.75rem; text-align: center; }
+.page-lead { color: #475569; text-align: center; margin-bottom: 2rem; line-height: 1.6; }
+
+.card { background: white; border-radius: 16px; padding: 2.25rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); text-align: center; }
+.contact-row { display: flex; align-items: center; justify-content: center; gap: 0.6rem; margin-bottom: 1.25rem; font-size: 1rem; color: #1e293b; }
+.contact-row .icon { font-size: 1.1rem; }
+.contact-row a { color: #2563eb; text-decoration: none; font-weight: 600; }
+.contact-row a:hover { text-decoration: underline; }
+
+.btn { padding: 0.9rem 1.8rem; border-radius: 8px; font-size: 0.95rem; font-weight: 600; text-decoration: none; display: inline-block; background: #2563eb; color: white; margin-top: 0.75rem; }
+.btn:hover { background: #1d4ed8; }
+
+.note { font-size: 0.85rem; color: #64748b; margin-top: 1.75rem; line-height: 1.55; }
+
+footer { background: #0f2557; color: #cbd5e1; text-align: center; padding: 2rem; font-size: 0.85rem; margin-top: 3rem; }
+footer a { color: #60a5fa; text-decoration: none; }
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Logical <span>Coders</span></a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="work.html" class="nav-link">Our Work</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <div class="page-title">Let's Talk</div>
+  <p class="page-lead">Tell me a little about your business and where you're at with HIPAA, NIST CSF, or whatever framework you're working toward — I'll follow up directly.</p>
+
+  <div class="card">
+    <div class="contact-row"><span class="icon">✉️</span> <a href="mailto:logicalcoders@outlook.com?subject=Logical%20Coders%20Inquiry">logicalcoders@outlook.com</a></div>
+    <div class="contact-row"><span class="icon">📞</span> 813.743.1661</div>
+    <div class="contact-row"><span class="icon">📍</span> Tampa, FL — available remote</div>
+    <a href="mailto:logicalcoders@outlook.com?subject=Logical%20Coders%20Inquiry" class="btn">Email Anél Directly →</a>
+    <p class="note">Usually replies within one to two business days.</p>
+  </div>
+</main>
+
+<footer>
+  <p>Logical Coders — GRC &amp; Compliance Documentation | Tampa, FL (Remote)</p>
+  <p><a href="mailto:logicalcoders@outlook.com">logicalcoders@outlook.com</a> &nbsp;·&nbsp; 813.743.1661</p>
+</footer>
+
+</body>
+</html>

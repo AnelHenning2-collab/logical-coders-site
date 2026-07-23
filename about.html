@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Logical Coders</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f0f4ff; color: #1e293b; }
+nav { background: #0f2557; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); flex-wrap: wrap; }
+.nav-brand { color: white; font-size: 1.15rem; font-weight: 700; padding: 1rem 0; text-decoration: none; }
+.nav-brand span { color: #60a5fa; }
+.nav-links { display: flex; gap: 0; }
+.nav-link { color: #cbd5e1; padding: 1.2rem 0.9rem; font-size: 0.85rem; font-weight: 500; border-bottom: 3px solid transparent; transition: all 0.2s; white-space: nowrap; text-decoration: none; }
+.nav-link:hover, .nav-link.active { color: white; border-bottom-color: #60a5fa; background: rgba(255,255,255,0.05); }
+
+main { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+.page-title { font-size: 2.1rem; font-weight: 800; color: #0f2557; margin-bottom: 1.75rem; }
+.card { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+.card p { color: #475569; line-height: 1.7; font-size: 0.98rem; margin-bottom: 1rem; }
+.card p:last-child { margin-bottom: 0; }
+
+.creds { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 1.5rem; }
+.cred-card { background: #f8fafc; border-radius: 10px; padding: 1rem 1.25rem; border-left: 3px solid #2563eb; }
+.cred-card .label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #2563eb; margin-bottom: 0.25rem; }
+.cred-card .val { font-size: 0.88rem; color: #1e293b; font-weight: 600; }
+
+footer { background: #0f2557; color: #cbd5e1; text-align: center; padding: 2rem; font-size: 0.85rem; }
+footer a { color: #60a5fa; text-decoration: none; }
+
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .creds { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Logical <span>Coders</span></a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="work.html" class="nav-link">Our Work</a>
+    <a href="about.html" class="nav-link active">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <div class="page-title">About Logical Coders</div>
+
+  <div class="card">
+    <p>Logical Coders is run by Anél Henning, a graphic designer and creative director with twenty years of brand, publication, and digital design experience — most recently through her own studio, Logika Studios.</p>
+    <p>Compliance documentation turned out to share a core problem with design work: most of it fails not because the underlying rules are wrong, but because nobody can actually follow what's written. Twenty years spent translating complicated ideas into clear, usable communication for clients across healthcare, retail, and creative industries carries over directly into writing policies, risk registers, and audit evidence that people can actually use — not just file away.</p>
+    <p>Logical Coders was started to bring that same clarity to HIPAA and NIST CSF-aligned documentation for small businesses that need it done right, without hiring a full compliance department.</p>
+  </div>
+
+  <div class="card">
+    <p style="margin-bottom: 0.5rem; font-weight: 700; color: #0f2557;">Current credentials &amp; affiliations</p>
+    <div class="creds">
+      <div class="cred-card">
+        <div class="label">Certification</div>
+        <div class="val">HIPAA Business Associate Certification (2026)</div>
+      </div>
+      <div class="cred-card">
+        <div class="label">In Progress</div>
+        <div class="val">MS, Cybersecurity Management — Purdue Global University (expected Nov 2026)</div>
+      </div>
+      <div class="cred-card">
+        <div class="label">In Progress</div>
+        <div class="val">Information Assurance Certificate — American Public University</div>
+      </div>
+      <div class="cred-card">
+        <div class="label">Education</div>
+        <div class="val">BFA, Graphic Design — Maryland Institute College of Art (MICA)</div>
+      </div>
+      <div class="cred-card">
+        <div class="label">Membership</div>
+        <div class="val">ISACA — West Florida Chapter</div>
+      </div>
+      <div class="cred-card">
+        <div class="label">Membership</div>
+        <div class="val">IEEE — Women in Engineering, Computer Science</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Logical Coders — GRC &amp; Compliance Documentation | Tampa, FL (Remote)</p>
+  <p><a href="mailto:logicalcoders@outlook.com">logicalcoders@outlook.com</a> &nbsp;·&nbsp; 813.743.1661</p>
+</footer>
+
+</body>
+</html>

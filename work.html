@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Work | Logical Coders</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f0f4ff; color: #1e293b; }
+nav { background: #0f2557; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); flex-wrap: wrap; }
+.nav-brand { color: white; font-size: 1.15rem; font-weight: 700; padding: 1rem 0; text-decoration: none; }
+.nav-brand span { color: #60a5fa; }
+.nav-links { display: flex; gap: 0; }
+.nav-link { color: #cbd5e1; padding: 1.2rem 0.9rem; font-size: 0.85rem; font-weight: 500; border-bottom: 3px solid transparent; transition: all 0.2s; white-space: nowrap; text-decoration: none; }
+.nav-link:hover, .nav-link.active { color: white; border-bottom-color: #60a5fa; background: rgba(255,255,255,0.05); }
+
+main { max-width: 1100px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+.page-title { font-size: 2.1rem; font-weight: 800; color: #0f2557; margin-bottom: 0.75rem; }
+
+.honest-note { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 1.25rem 1.5rem; font-size: 0.92rem; color: #1e3a8a; line-height: 1.6; margin-bottom: 2.5rem; max-width: 800px; }
+
+.featured { background: white; border-radius: 16px; padding: 2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); border-top: 4px solid #7c3aed; margin-bottom: 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+.featured .txt h2 { color: #0f2557; font-size: 1.3rem; font-weight: 800; margin-bottom: 0.5rem; }
+.featured .txt p { color: #475569; line-height: 1.6; font-size: 0.95rem; max-width: 500px; }
+.featured .tag { display: inline-block; background: #ede9fe; color: #6d28d9; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.3rem 0.7rem; border-radius: 20px; margin-bottom: 0.75rem; }
+.btn { padding: 0.8rem 1.5rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600; text-decoration: none; display: inline-block; background: #7c3aed; color: white; white-space: nowrap; }
+.btn:hover { background: #6d28d9; }
+
+.section-title { font-size: 1.4rem; font-weight: 800; color: #0f2557; margin-bottom: 1.25rem; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.item-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); text-decoration: none; display: block; border-top: 4px solid #2563eb; transition: transform 0.15s; }
+.item-card:hover { transform: translateY(-3px); }
+.item-card .icon { font-size: 1.6rem; margin-bottom: 0.6rem; }
+.item-card h3 { color: #0f2557; font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+.item-card p { color: #64748b; font-size: 0.85rem; line-height: 1.5; }
+
+footer { background: #0f2557; color: #cbd5e1; text-align: center; padding: 2rem; font-size: 0.85rem; margin-top: 3rem; }
+footer a { color: #60a5fa; text-decoration: none; }
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .featured { flex-direction: column; align-items: flex-start; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Logical <span>Coders</span></a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="work.html" class="nav-link active">Our Work</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <div class="page-title">Our Work</div>
+
+  <div class="honest-note">
+    <strong>What these are:</strong> Logical Coders is a newer practice. The pieces below are capability demonstrations — built to show exactly the kind of documentation and tooling this practice produces — not case studies from completed client engagements. If you'd like something built around your specific framework or a reference conversation, get in touch.
+  </div>
+
+  <div class="featured">
+    <div class="txt">
+      <div class="tag">Flagship Demo</div>
+      <h2>GRC Governance Suite</h2>
+      <p>A working interactive tool — dashboard, threat risk mapper, evidence builder, a 90-day compliance playbook, a GRC assistant, and reusable templates — all in one place.</p>
+    </div>
+    <a href="grc-suite.html" class="btn">Try the Live Demo →</a>
+  </div>
+
+  <div class="section-title">Sample Documentation</div>
+  <div class="grid">
+    <a href="artifact_risk_register.html" class="item-card">
+      <div class="icon">📊</div>
+      <h3>Risk Register</h3>
+      <p>A full-year sample risk register, tracking 18 risks across Q1–Q4 with likelihood, impact, and treatment status.</p>
+    </a>
+    <a href="artifact_itgc_workpapers.html" class="item-card">
+      <div class="icon">🗂️</div>
+      <h3>ITGC Testing Workpapers</h3>
+      <p>Sample IT general controls testing workpapers across five control areas, formatted for auditor review.</p>
+    </a>
+    <a href="artifact_cap_tracker.html" class="item-card">
+      <div class="icon">✅</div>
+      <h3>CAP Tracker</h3>
+      <p>A corrective action plan tracker following nine sample findings from identification through closure.</p>
+    </a>
+    <a href="artifact_vendor_risk_assessment.html" class="item-card">
+      <div class="icon">🔗</div>
+      <h3>Vendor Risk Assessment</h3>
+      <p>A sample third-party/vendor risk assessment covering five vendors, with tiering and review cadence.</p>
+    </a>
+    <a href="artifact_compliance_calendar.html" class="item-card">
+      <div class="icon">📅</div>
+      <h3>Compliance Calendar</h3>
+      <p>A full-year sample compliance calendar with 34 recurring activities mapped across the calendar year.</p>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <p>Logical Coders — GRC &amp; Compliance Documentation | Tampa, FL (Remote)</p>
+  <p><a href="mailto:logicalcoders@outlook.com">logicalcoders@outlook.com</a> &nbsp;·&nbsp; 813.743.1661</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services | Logical Coders</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Inter', sans-serif; background: #f0f4ff; color: #1e293b; }
+nav { background: #0f2557; padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.3); flex-wrap: wrap; }
+.nav-brand { color: white; font-size: 1.15rem; font-weight: 700; padding: 1rem 0; text-decoration: none; }
+.nav-brand span { color: #60a5fa; }
+.nav-links { display: flex; gap: 0; }
+.nav-link { color: #cbd5e1; padding: 1.2rem 0.9rem; font-size: 0.85rem; font-weight: 500; border-bottom: 3px solid transparent; transition: all 0.2s; white-space: nowrap; text-decoration: none; }
+.nav-link:hover, .nav-link.active { color: white; border-bottom-color: #60a5fa; background: rgba(255,255,255,0.05); }
+
+main { max-width: 1000px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+.page-title { font-size: 2.1rem; font-weight: 800; color: #0f2557; margin-bottom: 0.75rem; }
+.page-lead { color: #475569; font-size: 1.05rem; line-height: 1.6; margin-bottom: 2.5rem; max-width: 700px; }
+
+.service { background: white; border-radius: 12px; padding: 1.75rem 2rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); margin-bottom: 1.25rem; border-left: 4px solid #2563eb; }
+.service h2 { color: #0f2557; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+.service p { color: #475569; line-height: 1.6; font-size: 0.95rem; }
+.service .fw { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #2563eb; margin-bottom: 0.35rem; }
+
+.process { margin-top: 3rem; }
+.process h2 { color: #0f2557; font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem; text-align: center; }
+.process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.process-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); border-top: 4px solid #2563eb; }
+.process-card .num { font-size: 0.75rem; font-weight: 700; color: #2563eb; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.4rem; }
+.process-card h3 { color: #0f2557; font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+.process-card p { color: #64748b; font-size: 0.87rem; line-height: 1.5; }
+
+.cta-band { text-align: center; margin-top: 3rem; }
+.btn { padding: 0.85rem 1.6rem; border-radius: 8px; font-size: 0.95rem; font-weight: 600; text-decoration: none; display: inline-block; background: #2563eb; color: white; }
+.btn:hover { background: #1d4ed8; }
+
+footer { background: #0f2557; color: #cbd5e1; text-align: center; padding: 2rem; font-size: 0.85rem; }
+footer a { color: #60a5fa; text-decoration: none; }
+
+@media (max-width: 900px) {
+  .process-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">Logical <span>Coders</span></a>
+  <div class="nav-links">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="services.html" class="nav-link active">Services</a>
+    <a href="work.html" class="nav-link">Our Work</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <div class="page-title">Services</div>
+  <p class="page-lead">Documentation-first compliance support for small businesses working toward HIPAA, NIST CSF, or a similar framework — without needing to hire a full-time compliance department.</p>
+
+  <div class="service">
+    <div class="fw">Policy &amp; Procedure Writing</div>
+    <h2>Policies your staff can actually follow</h2>
+    <p>Written policies and procedures aligned to HIPAA and NIST CSF, in plain language rather than legal boilerplate — so the people who have to follow them actually can.</p>
+  </div>
+
+  <div class="service">
+    <div class="fw">Risk &amp; Gap Analysis</div>
+    <h2>Risk registers &amp; gap analysis</h2>
+    <p>A structured risk register mapped to your chosen framework, identifying where your current controls fall short and tracking remediation over time.</p>
+  </div>
+
+  <div class="service">
+    <div class="fw">Audit Preparation</div>
+    <h2>Audit evidence package preparation</h2>
+    <p>Evidence organized, labeled, and version-controlled so it's ready to hand to an auditor or assessor — instead of assembled the week before a deadline.</p>
+  </div>
+
+  <div class="service">
+    <div class="fw">Ongoing Tracking</div>
+    <h2>Compliance calendars &amp; vendor risk tracking</h2>
+    <p>Recurring compliance obligations and third-party/vendor risk tracked in one place, with clear ownership and due dates.</p>
+  </div>
+
+  <div class="service">
+    <div class="fw">Remediation</div>
+    <h2>Corrective action plan (CAP) tracking</h2>
+    <p>Audit findings turned into a tracked remediation plan, with clear owners, target dates, and status — so findings actually get closed.</p>
+  </div>
+
+  <div class="process">
+    <h2>How an engagement works</h2>
+    <div class="process-grid">
+      <div class="process-card">
+        <div class="num">Step 1</div>
+        <h3>Discovery call</h3>
+        <p>A short conversation about your current documentation, the framework you're working toward, and where the gaps are.</p>
+      </div>
+      <div class="process-card">
+        <div class="num">Step 2</div>
+        <h3>Documentation sprint</h3>
+        <p>Policies, registers, or evidence packages drafted and reviewed with you in structured rounds — not a single black-box handoff.</p>
+      </div>
+      <div class="process-card">
+        <div class="num">Step 3</div>
+        <h3>Review &amp; handoff</h3>
+        <p>Final documents delivered in the format your team actually uses, with a walkthrough of how to maintain them going forward.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-band">
+    <a href="contact.html" class="btn">Start a Conversation</a>
+  </div>
+</main>
+
+<footer>
+  <p>Logical Coders — GRC &amp; Compliance Documentation | Tampa, FL (Remote)</p>
+  <p><a href="mailto:logicalcoders@outlook.com">logicalcoders@outlook.com</a> &nbsp;·&nbsp; 813.743.1661</p>
+</footer>
+
+</body>
+</html>
